@@ -1,0 +1,6 @@
+{
+  "stickypdpbanner": {
+    "component": "StickyPDPBanner",
+    "composition": "children"
+  }
+}
