@@ -1,79 +1,52 @@
-/* .wrapper {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 16 / 4.5;
+* {
+    scroll-padding: 5rem;
 }
 
-.leftContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55%;
+.stickyBannerContainer {
+    position: sticky;
+    top: -1px;
+    padding: 1rem;
+    background-color: white;
+    z-index: 10;
 }
 
-.rightContainer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 55%;
-    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-} */
+.isStuck {
+    border-bottom: 3px solid #ec1d24;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
 
-.container {
-    position: relative;
-    aspect-ratio: 16 / 5;
+.stickyBannerWrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.title {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    color: white;
-    padding: 0.5rem 1rem;
+.productName {
+    color: #545454;
+    font-size: 1.1rem;
+    font-weight: bold;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 25vw;
 }
 
-.wrapper {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    transition: clip-path 250ms ease;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.container:hover .wrapper {
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-}
-
-.peekContainer {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.peekWrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 100%;
-}
-
-.peekButton {
-    color: white;
-    font-weight: bold;
-    font-size: 1.25rem;
+.stickyAnchor {
     text-decoration: none;
-    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    border: 2px solid #ec1d24;
     padding: 0.5rem;
-    margin: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: #00a2f2;
-    border: 2px solid white;
-    box-shadow: 0.25rem 0.25rem 0.25rem black;
+}
+
+.selectProductButton {
+    display: inline-block;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #ec1d24;
+    cursor: pointer;
 }
