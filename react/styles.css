@@ -2,51 +2,14 @@
     scroll-padding: 5rem;
 }
 
-.stickyBannerContainer {
-    position: sticky;
-    top: -1px;
-    padding: 1rem;
-    background-color: white;
-    z-index: 10;
-}
+.stickyBannerContainer {}
 
-.isStuck {
-    border-bottom: 3px solid #ec1d24;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-}
+.isStuck {}
 
-.stickyBannerWrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+.stickyBannerWrapper {}
 
-.productName {
-    color: #545454;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-    max-width: 25vw;
-}
+.productName {}
 
-.stickyAnchor {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border-radius: 0.25rem;
-    border: 2px solid #ec1d24;
-    padding: 0.5rem;
-}
+.stickyAnchor {}
 
-.selectProductButton {
-    display: inline-block;
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background-color: #ec1d24;
-    cursor: pointer;
-}
+.selectProductButton {}
