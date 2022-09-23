@@ -99,20 +99,18 @@ const StickyPDPBanner: StorefrontFunctionComponent<StickyPDPBannerProps> = ({ })
 
   return (
     <div id={containerId} className={styles.stickyBannerContainer}>
-      <div className={styles.stickyBannerWrapper}>
-        {isStuck &&
-          <>
-            <div className={styles.productName}>{productName}</div>
-            <button onClick={handleScrollTop} className={styles.selectProductButton}>Select Product</button>
-            {hasDescription && <a href="#productOverview" className={styles.stickyAnchor}>Description</a>}
-            {hasFeatures && <a href="#productFeatures" className={styles.stickyAnchor}>Features</a>}
-            {hasSpecs && <a href="#specs-section" className={styles.stickyAnchor}>Specifications</a>}
-            {hasExtras && <a href="#eriks-extras" className={styles.stickyAnchor}>Erik's Extras</a>}
-            {hasArticles && <a href="#articles-section" className={styles.stickyAnchor}>Articles</a>}
-            {hasReviews && <a href="#all-reviews" className={styles.stickyAnchor}>Reviews</a>}
-          </>
-        }
-      </div>
+      {isStuck &&
+        <div className={styles.stickyBannerWrapper}>
+          <div className={styles.productName}>{productName}</div>
+          <button onClick={handleScrollTop} className={styles.selectProductButton}>Return to Top</button>
+          {hasDescription && <a href="#productOverview" className={styles.stickyAnchor}>Description</a>}
+          {hasFeatures && <a href="#productFeatures" className={styles.stickyAnchor}>Features</a>}
+          {hasSpecs && <a href="#specs-section" className={styles.stickyAnchor}>Specifications</a>}
+          {hasExtras && <a href="#eriks-extras" className={styles.stickyAnchor}>Erik's Extras</a>}
+          {hasArticles && <a href="#articles-section" className={styles.stickyAnchor}>Articles</a>}
+          {hasReviews && <a href="#all-reviews" className={styles.stickyAnchor}>Reviews</a>}
+        </div>
+      }
     </div>
   )
 }
